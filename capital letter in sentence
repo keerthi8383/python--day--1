@@ -1,0 +1,11 @@
+def count_capital_a(sentence):
+    count = 0
+    for char in sentence:
+        if char == 'A':
+            count += 1
+    return count
+
+# Example usage
+input_sentence = input("Enter a sentence: ")
+capital_a_count = count_capital_a(input_sentence)
+print("Number of capital A's:", capital_a_count)

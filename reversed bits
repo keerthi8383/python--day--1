@@ -1,0 +1,9 @@
+def reverse_bits(n, bitSize):
+    result = 0
+    for i in range(bitSize):
+        if n & (1 << i):
+            result |= 1 << (bitSize - 1 - i)
+    return result
+n=2147483648
+bitSize=32
+print(reverse_bits(n, bitSize))

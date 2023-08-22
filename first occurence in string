@@ -1,0 +1,8 @@
+print("The original string is : " + str(test_str))
+ 
+#using Regex to get last element occurrence
+match = re.search(r'e(?!.*e)', test_str)
+res = match.start()
+ 
+#printing result
+print("The index of last element occurrence: " + str(res))

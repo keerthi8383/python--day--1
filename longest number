@@ -1,0 +1,9 @@
+def find_longest_sentence(text):
+    sentences = re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s', text)  # Split text into sentences
+    longest_sentence = max(sentences, key=len)  # Find the longest sentence
+    return longest_sentence
+
+# Example usage
+input_text = input("Enter a text: ")
+longest_sentence = find_longest_sentence(input_text)
+print("Longest sentence:", longest_sentence)
